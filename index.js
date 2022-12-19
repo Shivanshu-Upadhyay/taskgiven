@@ -6,7 +6,7 @@ const app = express();
 // cors error
 const corsOption = {
     credentials:true,
-    origin: ["http://localhost:3000"],
+    origin: ["https://taskgiven.netlify.app","http://localhost:3000"],
   };
 app.use(cors(corsOption));
 app.use(express.json());
