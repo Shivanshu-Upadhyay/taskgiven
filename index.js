@@ -10,6 +10,7 @@ const corsOption = {
   };
 app.use(cors(corsOption));
 app.use(express.json());
+app.get("/",(req,res)=>{res.send("hii task")})
 app.use(require('./router/routes'));
 DbConnect();
 app.listen(PORT, () => {
